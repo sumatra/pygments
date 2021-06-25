@@ -417,6 +417,7 @@ LEXERS = {
     'ScdocLexer': ('pygments.lexers.scdoc', 'scdoc', ('scdoc', 'scd'), ('*.scd', '*.scdoc'), ()),
     'SchemeLexer': ('pygments.lexers.lisp', 'Scheme', ('scheme', 'scm'), ('*.scm', '*.ss'), ('text/x-scheme', 'application/x-scheme')),
     'ScilabLexer': ('pygments.lexers.matlab', 'Scilab', ('scilab',), ('*.sci', '*.sce', '*.tst'), ('text/scilab',)),
+    'ScowlLexer': ('pygments.lexers.scowl', 'Scowl', ('scowl',), ('*.scowl',), ()),
     'ScssLexer': ('pygments.lexers.css', 'SCSS', ('scss',), ('*.scss',), ('text/x-scss',)),
     'ShExCLexer': ('pygments.lexers.rdf', 'ShExC', ('shexc', 'shex'), ('*.shex',), ('text/shex',)),
     'ShenLexer': ('pygments.lexers.lisp', 'Shen', ('shen',), ('*.shen',), ('text/x-shen', 'application/x-shen')),
