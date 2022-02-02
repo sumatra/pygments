@@ -20,7 +20,7 @@ class ScowlLexer(RegexLexer):
                 'where', 'last', 'after', 'because'), suffix=r'\b'),
              Keyword),
             (r'(true|false|null|inf|second|seconds|minute|minutes|hour|hours|day|days|week|weeks)\b', Keyword.Constant),
-            (words(('int', 'float', 'string', 'map'
+            (words(('int', 'float', 'string', 'map',
                     'bool', 'time'), suffix=r'\b'),
              Keyword.Type),
             # float_lit
