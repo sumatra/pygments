@@ -16,11 +16,11 @@ class ScowlLexer(RegexLexer):
             (r'/(\\\n)?[*](.|\n)*?[*](\\\n)?/', Comment.Multiline),
             (r'(event)\b', Keyword.Namespace),
             (words((
-                'as', 'by', 'exclusive', 'default', 'when', 'then', 'contains', 'in', 'is', 'not', 'and', 'or',
+                'as', 'by', 'exclusive', 'default', 'when', 'then', 'in', 'is', 'not', 'and', 'or',
                 'where', 'last', 'after', 'because'), suffix=r'\b'),
              Keyword),
-            (r'(true|false|null|second|seconds|minute|minutes|hour|hours|day|days|week|weeks)\b', Keyword.Constant),
-            (words(('int', 'float', 'string',
+            (r'(true|false|null|inf|second|seconds|minute|minutes|hour|hours|day|days|week|weeks)\b', Keyword.Constant),
+            (words(('int', 'float', 'string', 'map'
                     'bool', 'time'), suffix=r'\b'),
              Keyword.Type),
             # float_lit
