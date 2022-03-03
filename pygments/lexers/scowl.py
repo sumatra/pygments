@@ -16,8 +16,8 @@ class ScowlLexer(RegexLexer):
             (r'/(\\\n)?[*](.|\n)*?[*](\\\n)?/', Comment.Multiline),
             (r'(event)\b', Keyword.Namespace),
             (words((
-                'as', 'by', 'exclusive', 'default', 'when', 'then', 'in', 'is', 'not', 'and', 'or',
-                'where', 'last', 'after', 'because'), suffix=r'\b'),
+                'after', 'as', 'because', 'by', 'default', 'exclusive', 'func', 'in', 'is', 'last',
+                'map', 'then', 'type', 'when', 'where', 'or', 'and', 'not'), suffix=r'\b'),
              Keyword),
             (r'(true|false|null|inf|second|seconds|minute|minutes|hour|hours|day|days|week|weeks)\b', Keyword.Constant),
             (words(('int', 'float', 'string', 'map',
