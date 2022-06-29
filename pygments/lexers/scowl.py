@@ -30,7 +30,7 @@ class ScowlLexer(RegexLexer):
             # int_lit
             (r'(0|[1-9][0-9]*)', Number.Integer),
             # JSONPath string
-            (r'\$\S*', String.Other),
+            (r'\$(\\\\|\\\s|\S)*', String.Other),
             # StringLiteral
             (r'"(\\\\|\\"|[^"])*"', String.Double),
             (r"'(\\\\|\\'|[^'])*'", String.Single),
