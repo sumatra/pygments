@@ -17,11 +17,11 @@ class ScowlLexer(RegexLexer):
             (r'(event)\b', Keyword.Namespace),
             (words((
                 'after', 'as', 'because', 'by', 'default', 'exclusive', 'func', 'in', 'is', 'last',
-                'map', 'then', 'type', 'when', 'where', 'or', 'and', 'not'), suffix=r'\b'),
+                'map', 'require', 'indexed', 'then', 'type', 'when', 'where', 'or', 'and', 'not'), suffix=r'\b'),
              Keyword),
-            (r'(true|false|null|inf|second|seconds|minute|minutes|hour|hours|day|days|week|weeks)\b', Keyword.Constant),
+            (r'(true|false|null|inf|second|seconds|minute|minutes|hour|hours|day|days|week|weeks|nanoseconds|microseconds|milliseconds|nanosecond|microsecond|millisecond)\b', Keyword.Constant),
             (words(('int', 'float', 'string', 'map',
-                    'bool', 'time'), suffix=r'\b'),
+                    'bool', 'time', 'table'), suffix=r'\b'),
              Keyword.Type),
             # float_lit
             (r'\d+(\.\d+[eE][+\-]?\d+|'
