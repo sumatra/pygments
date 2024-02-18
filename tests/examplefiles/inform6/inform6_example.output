@@ -17,7 +17,6 @@
 ' '           Text
 'Story'       Name.Constant
 ' '           Text
-''            Text
 '"'           Literal.String.Double
 'Informal Testing' Literal.String.Double
 '"'           Literal.String.Double
@@ -29,7 +28,6 @@
 ' '           Text
 'Headline'    Name.Constant
 ' '           Text
-''            Text
 '"'           Literal.String.Double
 '^'           Literal.String.Escape
 'Not a game.' Literal.String.Double
@@ -43,7 +41,7 @@
 'Release'     Keyword
 ' '           Text
 ''            Text
-'4'           Literal.Number.Integer
+'6'           Literal.Number.Integer
 ''            Punctuation
 ';'           Punctuation
 '\n'          Text
@@ -52,7 +50,7 @@
 ' '           Text
 ''            Text
 '"'           Literal.String.Double
-'200526'      Literal.String.Double
+'240210'      Literal.String.Double
 '"'           Literal.String.Double
 ''            Punctuation
 ';'           Punctuation
@@ -94,7 +92,6 @@
 ' '           Text
 'WORDSIZE'    Name.Constant
 ' '           Text
-''            Text
 '2'           Literal.Number.Integer
 ''            Punctuation
 ';'           Punctuation
@@ -448,7 +445,6 @@
 ' '           Text
 'to'          Name.Constant
 ' '           Text
-''            Text
 'reversed'    Name
 ''            Punctuation
 ';'           Punctuation
@@ -509,9 +505,91 @@
 
 'Property'    Keyword
 ' '           Text
+'long'        Name.Constant
+'\n    '      Text
+'! A long way from the property name' Comment.Single
+'\n    '      Text
+'! to the semicolon' Comment.Single
+'\n    '      Text
+''            Punctuation
+';'           Punctuation
+'\n'          Text
+
+'Property'    Keyword
+' '           Text
+'additive'    Name.Constant
+''            Punctuation
+';'           Punctuation
+'\n'          Text
+
+'Property'    Keyword
+' '           Text
+'individual'  Name.Constant
+' '           Text
+''            Text
+'1'           Literal.Number.Integer
+''            Punctuation
+';'           Punctuation
+'\n'          Text
+
+'Iffalse'     Keyword
+' '           Text
+''            Text
+'true'        Name.Builtin
+''            Punctuation
+';'           Punctuation
+'\n'          Text
+
+'Property'    Keyword
+' '           Text
+'long'        Keyword
+' '           Text
+'individual'  Name.Constant
+''            Punctuation
+';'           Punctuation
+'\n'          Text
+
+'Property'    Keyword
+' '           Text
+'long'        Keyword
+' '           Text
+'individual'  Keyword
+' '           Text
+'individual'  Name.Constant
+''            Punctuation
+';'           Punctuation
+'\n'          Text
+
+'Property'    Keyword
+' '           Text
+'additive'    Keyword
+' '           Text
+'individual'  Name.Constant
+''            Punctuation
+';'           Punctuation
+'\n'          Text
+
+'Property'    Keyword
+' '           Text
+'individual'  Keyword
+' '           Text
+'individual'  Name.Constant
+''            Punctuation
+';'           Punctuation
+'\n'          Text
+
+'Endif'       Keyword
+''            Punctuation
+';'           Punctuation
+'\n'          Text
+
+'Property'    Keyword
+' '           Text
 'long'        Keyword
 ' '           Text
 'additive'    Keyword
+' '           Text
+'long'        Keyword
 ' '           Text
 'additive'    Keyword
 ' '           Text
@@ -592,7 +670,6 @@
 ' '           Text
 'Constant2'   Name.Constant
 ' '           Text
-''            Text
 'Constant1'   Name
 ''            Punctuation
 ';'           Punctuation
@@ -602,10 +679,30 @@
 ' '           Text
 'Constant3'   Name.Constant
 ' '           Text
-'='           Operator
+'='           Punctuation
 ' '           Text
-''            Text
 'Constant2'   Name
+''            Punctuation
+';'           Punctuation
+'\n'          Text
+
+'Constant'    Keyword
+' '           Text
+'Constant4'   Name.Constant
+' '           Text
+'='           Punctuation
+' '           Text
+'1'           Literal.Number.Integer
+','           Punctuation
+' '           Text
+'Constant5'   Name.Constant
+','           Punctuation
+' '           Text
+'Constant6'   Name.Constant
+' '           Text
+'='           Punctuation
+' '           Text
+'2'           Literal.Number.Integer
 ''            Punctuation
 ';'           Punctuation
 '\n'          Text
@@ -699,6 +796,16 @@
 '69105'       Literal.Number.Integer
 ''            Punctuation
 ';'           Punctuation
+'\n'          Text
+
+'Global'      Keyword
+' '           Text
+'global3'     Name.Variable.Global
+' '           Text
+''            Text
+'69105'       Literal.Number.Integer
+''            Punctuation
+';'           Punctuation
 '\n\n'        Text
 
 'Lowstring'   Keyword
@@ -709,6 +816,17 @@
 '"'           Literal.String.Double
 'low string'  Literal.String.Double
 '"'           Literal.String.Double
+''            Punctuation
+';'           Punctuation
+'\n'          Text
+
+'Constant'    Keyword
+' '           Text
+'LOW_STRING_N' Name.Constant
+' '           Text
+'='           Punctuation
+' '           Text
+'25'          Literal.Number.Integer
 ''            Punctuation
 ';'           Punctuation
 '\n\n'        Text
@@ -1298,7 +1416,15 @@
 ';'           Punctuation
 '\n    '      Text
 ''            Text
-'3'           Literal.Number.Integer
+'('           Punctuation
+''            Text
+'Constant4'   Name
+' '           Text
+'+'           Operator
+' '           Text
+''            Text
+'Constant6'   Name
+')'           Punctuation
 ':'           Punctuation
 ' '           Text
 ''            Keyword
@@ -1828,7 +1954,8 @@
 ' '           Text
 ''            Text
 "'"           Literal.String.Single
-'q//'         Literal.String.Single
+'q'           Literal.String.Single
+'//'          Literal.String.Escape
 "'"           Literal.String.Single
 ':'           Punctuation
 '\n        '  Text
@@ -1854,6 +1981,33 @@
 'return'      Keyword
 ''            Punctuation
 ';'           Punctuation
+'\n        '  Text
+'#'           Punctuation
+'Ifdef'       Keyword
+' '           Text
+''            Text
+'TARGET_ZCODE' Name.Builtin
+''            Punctuation
+';'           Punctuation
+'\n        '  Text
+'@'           Keyword
+' '           Text
+'->'          Punctuation
+' '           Text
+''            Text
+'$8B'         Literal.Number.Hex
+' '           Text
+''            Text
+'$04'         Literal.Number.Hex
+' '           Text
+''            Text
+'$D2'         Literal.Number.Hex
+';'           Punctuation
+'\n        '  Text
+'#'           Punctuation
+'Endif'       Keyword
+''            Punctuation
+';'           Punctuation
 '\n    '      Text
 ''            Text
 "'"           Literal.String.Single
@@ -1863,7 +2017,8 @@
 ' '           Text
 ''            Text
 "'"           Literal.String.Single
-'p//'         Literal.String.Single
+'p'           Literal.String.Single
+'//~p'        Literal.String.Escape
 "'"           Literal.String.Single
 ':'           Punctuation
 '\n        '  Text
@@ -1953,7 +2108,8 @@
 ' '           Text
 ''            Text
 "'"           Literal.String.Single
-'plugh//p'    Literal.String.Single
+'plugh'       Literal.String.Single
+'//p'         Literal.String.Escape
 "'"           Literal.String.Single
 ','           Punctuation
 ' '           Text
@@ -2254,6 +2410,14 @@
 ' by Unicode value: ' Literal.String.Double
 '@{DC}'       Literal.String.Escape
 '@{002b}'     Literal.String.Escape
+'^'           Literal.String.Escape
+'"'           Literal.String.Double
+','           Punctuation
+'\n            ' Text
+''            Text
+'"'           Literal.String.Double
+' by string variable via constant: ' Literal.String.Double
+'@(LOW_STRING_N)' Literal.String.Escape
 '^'           Literal.String.Escape
 '"'           Literal.String.Double
 ','           Punctuation
@@ -3346,6 +3510,26 @@
 ' '           Text
 ''            Text
 '$$01'        Literal.Number.Bin
+''            Punctuation
+';'           Punctuation
+'\n        '  Text
+''            Text
+'a'           Name
+' '           Text
+'='           Operator
+' '           Text
+''            Text
+'$+1.0'       Literal.Number.Float
+''            Punctuation
+';'           Punctuation
+'\n        '  Text
+''            Text
+'a'           Name
+' '           Text
+'='           Operator
+' '           Text
+''            Text
+'$<-1E-3'     Literal.Number.Float
 ''            Punctuation
 ';'           Punctuation
 '\n        '  Text
